@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+.space{
+    width: 100%;
+    height: 90px;
+}
+img:hover{
+    transform: scale(.9);
+}
+                                             /* start header */
+header{
+box-shadow: 0px 10px 10px rgba(2, 2, 2, 0.8);
+}
+#name{
+    width: 30%;
+    background-color: rgb(198, 191, 191);
+    margin: 30px auto;
+    padding: 30px 20px;
+    font-size: 30px;
+border-radius: 20px;
+font-weight: bold;
+display: none;
+}
+#btn{
+    display: none;
+}
+header .ul{
+    margin: 0      17%;
+    font-weight: bold;
+}
+header .ul li a{
+padding: 0    10px;
+margin: 0 7px;
+transition: 0.5s;
+}
+header .ul li a:hover{
+    font-size: 18px;
+    color: #59341f !important;
+}
+                                /* end  header */
+                                /* start interior */
+.interior{
+margin: auto;
+}
+.interior .card-body .card-title{
+    font-size: 80px;
+}
+                                                        /* end interior */
+                                                        /* start project  */
+.strong{
+    flex-direction: row;
+    gap: 10px;
+}
+.strong  strong{
+    font-size: 35px;
+}
+.strong div{
+    padding: 5px;
+}
+
+                                            /* end project  */
+                                            /* start Services */
+  .Services .title{
+width: 350px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+gap: 4px;
+margin-bottom: 10px;
+    }
+.Services .line{
+    width: 80px;
+    height: 4px;
+    background-color: black;
+}
+.Services1 img{
+    width: 90px;
+    height: 90px;
+}
+                                          /* end  Services */
+                                        /* start  Dream */
+.pdream h5{
+    font-size: 40px;
+}
+.pdream p{
+    font-size: 20px;
+}
+.pdream .list-group-item .row{
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 25px;
+}
+.pdream .list-group-item .row p{
+padding: 10px;
+}
+                                    /* end Dream */
+                                    /* start Simple */
+.Simple h2{
+font-weight: bold;
+font-size: 40px;
+line-height: 40px;
+word-wrap: break-word;
+word-spacing: 10px;
+margin-bottom: 30px;
+}
+.Simple .start{
+   padding: 5px;
+}
+.Simple .start img{
+border-radius: 50%;
+}
+.Simple .start h5{
+font-weight: bold;
+}
+                                            /* end Simple */
+                                            /* start Customers */
+
+.Customers h3{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 35px;
+    margin-top: 10px;
+}
+.Customers span i{
+    font-size: 40px;
+    padding: 20px;
+    margin-right: 10px;
+}
+.Customers1{
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 120px;
+    left: 160px;
+    padding: 30px;
+    border-radius: 50px;
+    gap: 10px;
+}
+.Customers1  .div{
+width: 35%;
+    padding: 20px;
+    border-radius: 15px;
+}
+.Customers1  .div h2{
+font-size: 50px;
+}
+.Customers1  .div img{
+    width: 10px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 0;
+}
+.Customers1  .div .info{
+    justify-content:flex-start;
+    align-items: center;
+}
+                                            /* end Customers */
+                                     /* start Subscribe */
+.Subscribe{
+  position: relative; 
+}
+.Subscribe1{
+    width: 80%;
+    height: 40vh;
+  text-align: center;
+  transform: translate(10% ,30%);
+  padding: 20px;
+}
+.Subscribe1 h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.Subscribe1 p{
+    font-size:25px ;
+}
+.input{
+    width: 60%;
+    height: 12vh;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+position: absolute;
+bottom: -55px;
+background-color: white;
+}
+.input input{
+    width: 75%;
+    height: 88%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    margin: 2px;
+}
+                                                    /* end Subscribe */
+                                                    /* start footer */
+.footer{
+    height: 70vh;
+    padding: 70px   30px;
+    text-align: center;
+    text-wrap:wrap ;
+    margin: 0;
+}
+.footer .footer1{
+    margin-top: 30px;
+}
+.footer .footer1 p{
+    font-size: 25px;
+    color: #bab3b3;
+    margin: 20px;
+}
+.footer .footer1 h2{
+    font-size: 35px;
+}
+.footer .footer1 p i{
+color: white;
+background-color: gray;
+border-radius: 10px;
+}
+                                                /* end footer */
+
+      @media (max-width: 800px) {
+        .Customers{
+            flex-direction: column-reverse;
+        }
+            .Customers1{
+                width: 100%;
+                height: 140vh;
+                position: absolute;
+                top: 120px;
+                left: 70px;
+                padding: 0px;
+            }  
+            .Customers1  .div{
+                width: 90%;
+                    padding: 3px;
+                }
+                .Customers span i{
+                  display: none; 
+                }
+                .Customers h3{
+                    font-size: 35px;
+                    line-height: 35px;
+                }
+                .Subscribe{
+                    width: 100%;
+                    height: 60vh;
+                    position: relative; 
+                    margin-top: 500px;
+                  }
+                  .Subscribe1{
+                      width: 90%;
+                      height: 40vh;
+                    text-align: center;
+                    transform: translate(10% ,30%);
+                    padding: 20px;
+                  }
+                  .Subscribe1 h2{
+                      font-size: 25px;
+                      font-weight: bold;
+                  }
+                  .Subscribe1 p{
+                      font-size:18px ;
+                  }
+                  .input{
+                      width: 100%;
+                      height: 9vh;
+                      margin: auto;
+                      border-radius: 10px;
+                      text-align: center;
+                  position: absolute;
+                  bottom: -25px;
+                  }
+                  .input input{
+                      width: 58%;
+                      height: 90%;
+                      border: none;
+                      outline: none;
+                      padding-left: 10px;
+                      margin: 2px;
+                  }
+                  .footer{
+                    height: 120vh;
+                    padding: 0px;
+                    margin: 0;
+                }
+                .footer .footer1:first-child{
+                    margin-top: 70px;
+                }
+                .footer .footer1{
+                    margin-top: 40px;
+                }
+                .footer .footer1 p{
+                    font-size: 15px;
+                    color: #bab3b3;
+                    margin: 5px;
+                }
+                .footer .footer1 h2{
+                    font-size: 25px;
+                }
+      }                                      
